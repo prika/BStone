@@ -1,0 +1,545 @@
+@font-face {
+    font-family: 'Noe Display';
+    src: url('assets/fonts/NoeDisplay-Black.eot');
+    src: url('assets/fonts/NoeDisplay-Black.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/NoeDisplay-Black.woff2') format('woff2'),
+        url('assets/fonts/NoeDisplay-Black.woff') format('woff'),
+        url('assets/fonts/NoeDisplay-Black.ttf') format('truetype'),
+        url('assets/fonts/NoeDisplay-Black.svg#NoeDisplay-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Headings */
+/* h1, h1 *, .h1, .tit_H1{
+	font-family: 'Montserrat-Regular', Arial, Helvetica, 'Segoe UI', sans-serif;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 32px;
+	color: #333;
+} */
+
+body, p {
+	font-family: 'Noe Display', serif;
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 30px;
+	color: #333;
+	/* text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; */
+}
+
+#contactsSection *{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 25px;
+	line-height: 30px;
+	color: #333;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+#adressSection a:hover,
+#contactsSection a:hover,
+a:hover{ color: #c47c5a; }
+
+/* 
+@media screen and (max-width: 768px){
+	h1, h1 *, .h1, .tit_H1{font-size: 23px;line-height: 120%;}
+	h2, h2 *, .h2, .tit_H2{font-size: 20px;line-height: 120%;}
+	h3, h3 *, .h3{font-size: 15px;line-height: 120%;}
+}
+*/
+
+body{ background-color:#F0F0F0; }
+
+#bannerFullsize{
+	height: 100vh;
+	margin: 0; padding: 0;
+	position: relative;
+	z-index: 0;
+}
+
+	
+	#bannerImage{
+		width: 100vw;
+		height: 100vh;
+		background: url(assets/images/BlocoB-7234_Banner.jpg) no-repeat center center; 
+
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+
+		animation: changeLogos2 .3s ease-in-out 6s forwards;
+		opacity: 0;
+	}
+
+	#bannerFullsize.hideAnimation #bannerImage{
+		animation: changeLogos2 .3s ease-in-out 2s forwards;
+	}
+
+	#bannerImage::before{
+		content: '';
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0, 0, 0, 0.15);
+
+		opacity: 0;
+		animation: changeLogos2 .3s ease-in-out 6.4s forwards;
+	}
+	#bannerImage::after{
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		
+		background: url(assets/intro_logo.svg) no-repeat fixed;
+
+		-webkit-background-size: 510px;
+		-moz-background-size: 510px;
+		-o-background-size: 510px;
+		background-size: 510px;
+
+		background-position: center center;
+
+		opacity: 0;
+		animation: changeLogos2 .3s ease-in-out 6.6s forwards;
+	}
+
+	#bannerAnimation {
+		height: 100vh;
+		width: 100vw;
+
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		
+		display: block;
+		background-color: #D8D8D8;
+		
+		/* clip-path: url(assets/mask_invert.svg); */
+		/* border: 1px solid red; */
+	}
+
+	/* #bannerAnimation #logo{
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		display:block;
+		
+		z-index:2;
+		-webkit-clip-path: url("#myMask"); 
+		clip-path: url("#myMask");  
+		  
+	}*/
+
+	#animatedlogo{
+		position: fixed;
+		top: 374px;
+		z-index: 2;
+		fill: #ffffff;
+		width: 100vw;
+
+		animation: changeLogos 1s ease-in-out 5s forwards;
+	}
+
+		#animatedlogo #B{
+			transform: translateX(34%);
+			opacity: 0;
+
+			/* -webkit-animation: myanimation1 5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2s;
+			-moz-animation: myanimation1 5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2s;
+			animation: myanimation1 5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2s; */
+			animation: myanimation1 3s ease-in-out 1s forwards;
+		}
+
+		#animatedlogo #Stone{
+			transform: translateX(90%);
+			opacity: 0;
+
+			/* -webkit-animation: myanimation2 5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2s;
+			-moz-animation: myanimation2 5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2s;
+			animation: myanimation2 5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2s; */
+
+			animation: myanimation2 3s ease-in-out 1s forwards;
+		}
+
+
+		#animatedlogo #Rreferencias{
+			transform: translateX(30%);
+			opacity: 0;
+			
+			/* -webkit-animation: myanimation3 5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2s;
+			-moz-animation: myanimation3 5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2s;
+			animation: myanimation3 5s cubic-bezier(0.6, -0.28, 0.735, 0.045) 2s; */
+
+			animation: myanimation3 3s ease-in-out 1s forwards;
+		}
+
+
+
+		
+		/* @-webkit-keyframes myanimation1, 
+		@-moz-keyframes myanimation1,
+		@-ms-keyframes myanimation1,*/
+		@keyframes myanimation1 {
+			0% { 
+				opacity: 0; 
+			}
+			3% { 
+				opacity: 1; 
+			}
+			20% { 
+				transform: translateX(34%); 
+				opacity: 1; 
+			}
+			/* 50% { 
+				transform: translateX(30%); 
+				opacity: 1; 
+			} */
+			70%, 90%{
+				transform: translateX(30%);
+				opacity: 1; 
+			}
+			100% { 
+				transform: translateX(34%);
+				opacity: 1; 
+			}
+		}
+
+		@keyframes myanimation2 {
+			0% { 
+				opacity: 0;
+			}
+			20% { 
+				opacity: 1; 
+			}
+			50% { 
+				transform: translateX(30%); 
+				opacity: 1; 
+			}
+			70%, 90% { 
+				transform: translateX(30%); 
+				opacity: 1; 
+			}
+			
+			100% { 
+				transform: translateX(34%);
+				opacity: 1; 
+			}
+		}
+
+		@keyframes myanimation3 {
+			0%, 20%, 70%  { 
+				opacity: 0; 
+			}
+			80%{
+				opacity: 1; 
+			}
+			90% { 
+				transform: translateX(30%);
+				opacity: 1; 
+			}
+			100% { 
+				transform: translateX(34%);
+				opacity: 1; 
+			}
+		}
+
+		@keyframes changeLogos {
+			0% { 
+				opacity: 1;
+			}
+			100% { 
+				opacity: 0; 
+				display: none;
+			}
+		}
+
+		@keyframes changeLogos2 {
+			0% { 
+				opacity: 0;
+				display: none;
+			}
+			100% { 
+				opacity: 1; 
+				display: block;
+				
+			}
+		}
+		
+
+		
+
+
+
+	.line{
+		position: fixed;
+		background: rgba(240, 240, 240, 0.4);
+		z-index: 2;
+	}
+
+		.horizontalLine{
+			top: 230px;
+			width: 100%;
+			height: 1px;
+			animation: horizontalLineAnim 3s ease-in-out 1s forwards;
+		}
+		.verticalLeftLine{
+			left: 330px;
+			width: 1px;
+			height: 100vh;
+			animation: verticalLineAnim 3s ease-in-out 1s forwards;
+		}
+		.verticalRightLine{
+			right: 113px;
+			width: 1px;
+			height: 100vh;
+			animation: verticalLineAnim2 3s ease-in-out 1s forwards;
+		}
+
+
+		@keyframes horizontalLineAnim {
+			0% { top: 0;}
+			100% { top: 230px;}
+		}
+
+		@keyframes verticalLineAnim {
+			0% { left: 0;}
+			100% { left: 330px;}
+		}
+
+		@keyframes verticalLineAnim2 {
+			0% { right: 0;}
+			100% { right: 113px;}
+		}
+	
+
+
+	#svgMask{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 2;
+		/* fill-opacity: 50%; */
+
+	}
+	  
+
+/* Products */
+	.productsList{
+		background: url(assets/B_Simbolo_estatico_Corpo.svg) no-repeat center 100px fixed;
+
+		-webkit-background-size: 200px;
+		-moz-background-size: 200px;
+		-o-background-size: 200px;
+		background-size: 200px;
+
+		padding-top: 100px;
+		margin-bottom: 130px;
+	}
+
+	.productsList::before {
+		content: "";
+		display: block;
+		background: linear-gradient(to bottom, rgba(240, 240, 240, 0), #F0F0F0);
+		width: 100%;
+		height: 200px;
+	  }
+
+	
+	.productsList .container {
+		background-color: #F0F0F0;	
+	}
+	
+
+	
+
+	.product{
+		position: relative;
+		transform: translateZ(.25px);
+		cursor: url('assets/favicon.ico/favicon-16x16.png'), auto;	
+	}
+
+		.product .containerImage{
+			width: 260px;
+			height: 373px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+
+		.product .productImage{
+			width: 260px;
+			height: 373px;
+			
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+
+			background-position: center;
+			transition: all 0.5s ease;
+		}
+
+		.product .productName{
+			width: 120px;
+			position: absolute;
+			right: -20px;
+			top: 270px;
+			z-index: 2;
+			text-align: left;
+			text-indent: 25px;
+			transition: all 0.5s ease;
+		}
+
+			.product .productName span{
+				border: 3px solid #333;
+				width: 32px;
+				display: block;
+				content: '';
+				position: absolute;
+				top: 9px;
+				left: -10px;
+			}
+
+			.product .productName mark {
+				background-color: transparent;
+				padding: 2px 5px;
+				transition: all 0.8s ease;
+			}
+
+		.product:nth-of-type(2n){
+			margin-top: 130px;
+			transform: translateZ(.7px) scale(1);
+		}
+
+		.product:nth-of-type(2n) .productName{
+			top: 52px;
+		}
+
+	.product:hover .productImage{ transform: scale(1.1); }
+	.product:hover .productName{top: 170px;}
+	.product:hover .productName mark{background-color: white;}
+		
+
+/* ----------- */
+
+#adressSection{
+	background: #FFF url(assets/B_Simbolo_estatico_Contactos.svg) no-repeat 230px 400px fixed;
+	
+	-webkit-background-size: 450px;
+	-moz-background-size: 450px;
+	-o-background-size: 450px;
+	background-size: 450px;
+
+	padding: 290px 0;
+	
+	
+}
+
+#adressSection a{
+	font-family: 'Oswald', sans-serif;
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 30px;
+		color: #333;
+		text-decoration: none;
+		transition: all 0.2s ease;
+}
+
+#adressSection address *{
+	font-style: normal;
+	font-size: 32px;
+	line-height: 40px;
+}
+
+#contactsSection{
+	background: #FFF url(assets/B_Simbolo_estatico_Contactos.svg) no-repeat 230px 400px fixed;
+	-webkit-background-size: 450px;
+	-moz-background-size: 450px;
+	-o-background-size: 450px;
+	background-size: 450px;
+	border-top: 1px solid #DDD;
+	padding: 145px 0;
+}
+
+	#contactsSection .row{
+		margin-bottom: 10px;
+	}
+
+	
+
+
+footer{
+	background: #2A2A2A;
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	position: relative;
+}
+
+footer .logoFooter{
+	display: block;
+	/* width: 210px; */
+	height: 50px;
+	background: url(assets/logo_footer.svg) no-repeat;
+}
+
+footer .scrollButton{
+	position: absolute;
+	top: -34px;
+	left: 50%;
+	margin-left: -35px;
+	display: block;
+	width: 67px;
+	height: 67px;
+	transition: all 0.2s ease;
+	background: url(assets/scrollTop.svg) no-repeat center center;
+}
+
+	footer .scrollButton:hover{
+		width: 73px;
+		height: 73px;
+		top: -36px;
+		margin-left: -38px;
+		background: url(assets/scrollTop-hover.svg) no-repeat center center;
+	}
+
+	
+	footer .social-icons{text-align: right;}
+	footer .social-icons a{
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		margin-left: 10px;
+		transition: all 0.8s ease;
+		background-position: center center;
+		line-height: 0;
+	}
+
+	.social-icons a.fb{background: url(assets/social/icon_face.svg) no-repeat center center}
+	.social-icons a.in{background: url(assets/social/icon_Insta.svg) no-repeat center center}
+	.social-icons a.pi{background: url(assets/social/icon_Pint.svg) no-repeat center center}
+	.social-icons a.yt{background: url(assets/social/icon_Youtube.svg) no-repeat center center}
+
+	.social-icons a.fb:hover{background: url(assets/social/icon_face-hover.svg) no-repeat center center}
+	.social-icons a.in:hover{background: url(assets/social/icon_Insta-hover.svg) no-repeat center center}
+	.social-icons a.pi:hover{background: url(assets/social/icon_Pint-hover.svg) no-repeat center center}
+	.social-icons a.yt:hover{background: url(assets/social/icon_Youtube-hover.svg) no-repeat center center}
