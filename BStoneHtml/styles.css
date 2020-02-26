@@ -90,6 +90,8 @@ body{ background-color:#F0F0F0; }
 		animation: changeLogos2 .3s ease-in-out 6s forwards;
 
 		opacity: 0;
+
+		
 	}
 
 	/* #bannerFullsize.hideAnimation #bannerImage{
@@ -141,6 +143,11 @@ body{ background-color:#F0F0F0; }
 		-moz-animation: changeLogos2 .3s ease-in-out 6.6s forwards;
 		-o-animation: changeLogos2 .3s ease-in-out 6.6s forwards;
 		animation: changeLogos2 .3s ease-in-out 6.6s forwards;
+
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 46% 80%, 21% 100%, 0 100%);
+		-o-clip-path: polygon(0 0, 100% 0, 100% 80%, 46% 80%, 21% 100%, 0 100%);
+		-ms-clip-path: polygon(0 0, 100% 0, 100% 80%, 46% 80%, 21% 100%, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 80%, 46% 80%, 21% 100%, 0 100%);
 	}
 
 	#bannerAnimation {
@@ -157,8 +164,10 @@ body{ background-color:#F0F0F0; }
 		display: block;
 		background-color: #D8D8D8;
 		
+		
+
 		/* clip-path: url(assets/mask_invert.svg); */
-		/* border: 1px solid red; */
+		
 	}
 
 	/* #bannerAnimation #logo{
@@ -184,6 +193,8 @@ body{ background-color:#F0F0F0; }
 		-moz-animation: changeLogos 1s ease-in-out 5s forwards;
 		-o-animation: changeLogos 1s ease-in-out 5s forwards;
 		animation: changeLogos 1s ease-in-out 5s forwards;
+
+
 	}
 
 		#animatedlogo #B{
