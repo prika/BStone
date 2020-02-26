@@ -359,15 +359,14 @@ body{ background-color:#F0F0F0; }
 	
 
 
-	#svgMask{
+	/* #svgMask{
 		position: absolute;
 		bottom: 0;
 		left: 0;
 		right: 0;
 		z-index: 2;
-		/* fill-opacity: 50%; */
-
-	}
+		fill-opacity: 50%; 
+	}*/
 	  
 
 /* Products */
@@ -379,8 +378,8 @@ body{ background-color:#F0F0F0; }
 		-o-background-size: 200px;
 		background-size: 200px;
 
-		/* filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/B_Simbolo_estatico_Corpo.svg', sizingMethod='scale');
-		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/B_Simbolo_estatico_Corpo.svg', sizingMethod='scale')"; */
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/B_Simbolo_estatico_Corpo.svg', sizingMethod='scale');
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/B_Simbolo_estatico_Corpo.svg', sizingMethod='scale')";
 
 		padding-top: 100px;
 		margin-bottom: 130px;
