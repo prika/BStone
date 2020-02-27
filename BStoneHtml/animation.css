@@ -1,0 +1,94 @@
+/* -webkit-keyframes myanimation1, 
+-moz-keyframes myanimation1,
+-ms-keyframes myanimation1, */
+@keyframes myanimation1 {
+    0%, 3%, 45% { 
+        transform: translateX(18%); 
+        opacity: 1; 
+    }
+    60%, 80%{
+        transform: translateX(-18%); 
+        opacity: 1; 
+    }
+    100% { 
+        transform: translateX(0);
+        opacity: 1; 
+    }
+}
+
+@keyframes myanimation2 {
+    0% , 20% { 
+        opacity: 0; 
+    }
+    45% { 
+        transform: translateX(18%); 
+        opacity: 1; 
+    }
+    60%, 80% { 
+        transform: translateX(-18%); 
+        opacity: 1; 
+    }
+    100% { 
+        transform: translateX(0); 
+        opacity: 1; 
+    }
+}
+
+@keyframes myanimation3 {
+    0%, 20%, 65% { 
+        transform: translateX(-80%); 
+        opacity: 0; 
+    }
+    100% { 
+        transform: translateX(0); 
+        opacity: 1; 
+    }
+}
+
+
+
+
+@keyframes horizontalLineAnim {
+    0% { top: 0;}
+    100% { top: 230px;}
+}
+
+@keyframes verticalLineAnim {
+    0% { left: 0;}
+    100% { left: 330px;}
+}
+
+@keyframes verticalLineAnim2 {
+    0% { right: 0;}
+    100% { right: 113px;}
+}
+
+
+
+
+
+@keyframes changeLogos {
+    0% { 
+        opacity: 1;
+        transform: none;
+    }
+    100% { 
+        opacity: 0; 
+        transform: translateY(2rem);
+        display: none;
+        
+    }
+}
+
+@keyframes changeLogos2 {
+    0% { 
+        display: block;
+        opacity: 0;
+        transform: translateY(-2rem);
+    }
+    100% { 
+        opacity: 1;
+        display: block;
+        transform: none;
+    }
+}

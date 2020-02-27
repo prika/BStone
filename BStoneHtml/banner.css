@@ -1,4 +1,3 @@
-
 #bannerFullsize{
 	height: 100vh;
 	margin: 0; padding: 0;
@@ -6,8 +5,75 @@
 	z-index: 0;
 }
 
-	
+    #bannerAnimation {
+        height: 100vh;
+        width: 100vw;
+
+        position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        z-index:0;
+        
+        display: block;
+        background-color: #D8D8D8;
+    }
+
+            #animatedlogo{
+                position: fixed;
+                top: 374px;
+                left: 50%;
+                margin-left: -255px;
+
+                z-index: 2;
+                fill: #ffffff;
+
+                overflow: visible;
+                width: 510px;
+
+                -webkit-animation: changeLogos 1s ease-in-out 5s forwards;
+                -moz-animation: changeLogos 1s ease-in-out 5s forwards;
+                -o-animation: changeLogos 1s ease-in-out 5s forwards;
+                animation: changeLogos 1s ease-in-out 5s forwards;
+            }
+
+                #animatedlogo #B{
+                    transform: translateX(18%);
+                    opacity: 0;
+                    -webkit-animation: myanimation1 3s 1s ease-in-out forwards;
+                    -moz-animation: myanimation1 3s 1s ease-in-out forwards;
+                    -o-animation: myanimation1 3s 1s ease-in-out forwards;
+                    animation: myanimation1 3s 1s ease-in-out forwards;
+                }
+
+                #animatedlogo #Stone{
+                    transform: translateX(50%);
+                    opacity: 0;
+                    -webkit-animation: myanimation2 3s 1s ease-in-out forwards;
+                    -moz-animation: myanimation2 3s 1s ease-in-out forwards;
+                    -o-animation: myanimation2 3s 1s ease-in-out forwards;
+                    animation: myanimation2 3s 1s ease-in-out forwards;
+                }
+
+
+                #animatedlogo #Rreferencias{
+                    transform: translateX(-50%);
+                    opacity: 0;
+                    -webkit-animation: myanimation3 3s 1s ease-in-out forwards;
+                    -moz-animation: myanimation3 3s 1s ease-in-out forwards;
+                    -o-animation: myanimation3 3s 1s ease-in-out forwards;
+                    animation: myanimation3 3s 1s ease-in-out forwards;
+                }
+
+
+    
 	#bannerImage{
+        -webkit-animation: changeLogos2 2s 6s cubic-bezier(0, .5, 0, 1) forwards;
+		-moz-animation: changeLogos2 2s 6s cubic-bezier(0, .5, 0, 1) forwards;
+		-o-animation: changeLogos2 2s 6s cubic-bezier(0, .5, 0, 1) forwards;
+        animation: changeLogos2 2s 6s cubic-bezier(0, .5, 0, 1) forwards;
+        
 		width: 100vw;
 		height: 100vh;
 		position: relative;
@@ -22,245 +88,87 @@
 
 		background-position: center center;
 
-		-webkit-animation: changeLogos2 .3s ease-in-out 6s forwards;
-		-moz-animation: changeLogos2 .3s ease-in-out 6s forwards;
-		-o-animation: changeLogos2 .3s ease-in-out 6s forwards;
-		animation: changeLogos2 .3s ease-in-out 6s forwards;
-
-		opacity: 0;
-
-		
+        opacity: 0;
 	}
 
-	/* #bannerFullsize.hideAnimation #bannerImage{
-		animation: changeLogos2 .3s ease-in-out 2s forwards;
-	} */
 
-	#bannerImage::before{
-		content: '';
-		display: block;
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		z-index: 3;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background: rgba(0, 0, 0, 0.15);
+        #bannerImage::before{
+            -webkit-animation: changeLogos2 .3s 6.2s cubic-bezier(0, .5, 0, 1) forwards;
+            -moz-animation: changeLogos2 .3s 6.2s cubic-bezier(0, .5, 0, 1) forwards;
+            -o-animation: changeLogos2 .3s 6.2s cubic-bezier(0, .5, 0, 1) forwards;
+            animation: changeLogos2 .3s 6.2s cubic-bezier(0, .5, 0, 1) forwards;
+            
+            display: block;
+            content: '';
+            position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            z-index: 3;
+            
+            width: 100%;
+            height: 100%;
 
-		opacity: 0;
+            background: rgba(0, 0, 0, 0.15);
+            opacity: 0;
+        }
+        
+        #bannerImage::after{
+            -webkit-animation: changeLogos2 .3s ease-in-out 6.6s forwards;
+            -moz-animation: changeLogos2 .3s ease-in-out 6.6s forwards;
+            -o-animation: changeLogos2 .3s ease-in-out 6.6s forwards;
+            animation: changeLogos2 .3s ease-in-out 6.6s forwards;
+            
+            content: '';
+            position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            z-index: 3;
 
-		-webkit-animation: changeLogos2 .3s ease-in-out 6.4s forwards;
-		-moz-animation: changeLogos2 .3s ease-in-out 6.4s forwards;
-		-o-animation: changeLogos2 .3s ease-in-out 6.4s forwards;
-		animation: changeLogos2 .3s ease-in-out 6.4s forwards;
-	}
-	#bannerImage::after{
-		content: '';
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		z-index: 3;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		
-		background: url(assets/intro_logo.svg) no-repeat fixed;
+            width: 100%;
+            height: 100%;
+            
+            background: url(assets/intro_logo.svg) no-repeat fixed;
 
-		-webkit-background-size: 510px;
-		-moz-background-size: 510px;
-		-o-background-size: 510px;
-		background-size: 510px;
+            -webkit-background-size: 510px;
+            -moz-background-size: 510px;
+            -o-background-size: 510px;
+            background-size: 510px;
 
-		background-position: center center;
-		opacity: 0;
+            background-position: center center;
+            opacity: 0;
 
-		-webkit-animation: changeLogos2 .3s ease-in-out 6.6s forwards;
-		-moz-animation: changeLogos2 .3s ease-in-out 6.6s forwards;
-		-o-animation: changeLogos2 .3s ease-in-out 6.6s forwards;
-		animation: changeLogos2 .3s ease-in-out 6.6s forwards;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 46% 80%, 21% 100%, 0 100%);
+            -o-clip-path: polygon(0 0, 100% 0, 100% 80%, 46% 80%, 21% 100%, 0 100%);
+            -ms-clip-path: polygon(0 0, 100% 0, 100% 80%, 46% 80%, 21% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 46% 80%, 21% 100%, 0 100%);
+        }
 
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 46% 80%, 21% 100%, 0 100%);
-		-o-clip-path: polygon(0 0, 100% 0, 100% 80%, 46% 80%, 21% 100%, 0 100%);
-		-ms-clip-path: polygon(0 0, 100% 0, 100% 80%, 46% 80%, 21% 100%, 0 100%);
-		clip-path: polygon(0 0, 100% 0, 100% 80%, 46% 80%, 21% 100%, 0 100%);
-	}
+	
+        /* #bannerAnimation #logo{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            display:block;
+            
+            z-index:2;
+            -webkit-clip-path: url("#myMask"); 
+            clip-path: url("#myMask");    
+        }
+        
+        #svgMask{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+            fill-opacity: 50%; 
+        }*/
 
-	#bannerAnimation {
-		height: 100vh;
-		width: 100vw;
-
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		z-index:0;
-		
-		display: block;
-		background-color: #D8D8D8;
-		
-		
-
-		/* clip-path: url(assets/mask_invert.svg); */
-		
-	}
-
-	/* #bannerAnimation #logo{
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		display:block;
-		
-		z-index:2;
-		-webkit-clip-path: url("#myMask"); 
-		clip-path: url("#myMask");  
-		  
-	}*/
-
-	#animatedlogo{
-		position: fixed;
-		top: 374px;
-		z-index: 2;
-		fill: #ffffff;
-		width: 100vw;
-
-		-webkit-animation: changeLogos 1s ease-in-out 5s forwards;
-		-moz-animation: changeLogos 1s ease-in-out 5s forwards;
-		-o-animation: changeLogos 1s ease-in-out 5s forwards;
-		animation: changeLogos 1s ease-in-out 5s forwards;
-
-
-	}
-
-		#animatedlogo #B{
-			transform: translateX(34%);
-			opacity: 0;
-
-			-webkit-animation: myanimation1 3s ease-in-out 1s forwards;
-			-moz-animation: myanimation1 3s ease-in-out 1s forwards;
-			-o-animation: myanimation1 3s ease-in-out 1s forwards;
-			animation: myanimation1 3s ease-in-out 1s forwards;
-		}
-
-		#animatedlogo #Stone{
-			transform: translateX(90%);
-			opacity: 0;
-
-			-webkit-animation: myanimation2 3s ease-in-out 1s forwards;
-			-moz-animation: myanimation2 3s ease-in-out 1s forwards;
-			-o-animation: myanimation2 3s ease-in-out 1s forwards;
-			animation: myanimation2 3s ease-in-out 1s forwards;
-		}
-
-
-		#animatedlogo #Rreferencias{
-			transform: translateX(30%);
-			opacity: 0;
-			
-			-webkit-animation: myanimation3 3s ease-in-out 1s forwards;
-			-moz-animation: myanimation3 3s ease-in-out 1s forwards;
-			-o-animation: myanimation3 3s ease-in-out 1s forwards;
-			animation: myanimation3 3s ease-in-out 1s forwards;
-		}
-
-
-
-		
-		/* @-webkit-keyframes myanimation1, 
-		@-moz-keyframes myanimation1,
-		@-ms-keyframes myanimation1,*/
-		@keyframes myanimation1 {
-			0% { 
-				opacity: 0; 
-			}
-			3% { 
-				opacity: 1; 
-			}
-			20% { 
-				transform: translateX(34%); 
-				opacity: 1; 
-			}
-			/* 50% { 
-				transform: translateX(30%); 
-				opacity: 1; 
-			} */
-			70%, 90%{
-				transform: translateX(30%);
-				opacity: 1; 
-			}
-			100% { 
-				transform: translateX(34%);
-				opacity: 1; 
-			}
-		}
-
-		@keyframes myanimation2 {
-			0% { 
-				opacity: 0;
-			}
-			20% { 
-				opacity: 1; 
-			}
-			50% { 
-				transform: translateX(30%); 
-				opacity: 1; 
-			}
-			70%, 90% { 
-				transform: translateX(30%); 
-				opacity: 1; 
-			}
-			
-			100% { 
-				transform: translateX(34%);
-				opacity: 1; 
-			}
-		}
-
-		@keyframes myanimation3 {
-			0%, 20%, 70%  { 
-				opacity: 0; 
-			}
-			80%{
-				opacity: 1; 
-			}
-			90% { 
-				transform: translateX(30%);
-				opacity: 1; 
-			}
-			100% { 
-				transform: translateX(34%);
-				opacity: 1; 
-			}
-		}
-
-		@keyframes changeLogos {
-			0% { 
-				opacity: 1;
-			}
-			100% { 
-				opacity: 0; 
-				display: none;
-			}
-		}
-
-		@keyframes changeLogos2 {
-			0% { 
-				opacity: 0;
-				display: none;
-			}
-			100% { 
-				opacity: 1; 
-				display: block;
-				
-			}
-		}
-		
-
-		
-
+	
 
 
 	.line{
@@ -273,46 +181,17 @@
 			top: 230px;
 			width: 100%;
 			height: 1px;
-
-
-			animation: horizontalLineAnim 3s ease-in-out 1s forwards;
+			animation: horizontalLineAnim .5s ease-in-out 6s forwards;
 		}
 		.verticalLeftLine{
 			left: 330px;
 			width: 1px;
 			height: 100vh;
-			animation: verticalLineAnim 3s ease-in-out 1s forwards;
+			animation: verticalLineAnim .5s ease-in-out 6s forwards;
 		}
 		.verticalRightLine{
 			right: 113px;
 			width: 1px;
 			height: 100vh;
-			animation: verticalLineAnim2 3s ease-in-out 1s forwards;
+			animation: verticalLineAnim2 .5s ease-in-out 6s forwards;
 		}
-
-
-		@keyframes horizontalLineAnim {
-			0% { top: 0;}
-			100% { top: 230px;}
-		}
-
-		@keyframes verticalLineAnim {
-			0% { left: 0;}
-			100% { left: 330px;}
-		}
-
-		@keyframes verticalLineAnim2 {
-			0% { right: 0;}
-			100% { right: 113px;}
-		}
-	
-
-
-	/* #svgMask{
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		z-index: 2;
-		fill-opacity: 50%; 
-	}*/
