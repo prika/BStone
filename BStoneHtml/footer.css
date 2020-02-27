@@ -1,0 +1,66 @@
+footer{
+	background: #2A2A2A;
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	position: relative;
+}
+
+footer .logoFooter{
+	display: block;
+	/* width: 210px; */
+	height: 50px;
+	background: url(assets/logo_footer.svg) no-repeat;
+}
+
+footer .scrollButton{
+	position: absolute;
+	top: -34px;
+	left: 50%;
+	margin-left: -35px;
+	display: block;
+	width: 67px;
+	height: 67px;
+
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+
+	background: url(assets/scrollTop.svg) no-repeat center center;
+}
+
+	footer .scrollButton:hover{
+		width: 73px;
+		height: 73px;
+		top: -36px;
+		margin-left: -38px;
+		background: url(assets/scrollTop-hover.svg) no-repeat center center;
+	}
+
+	
+	footer .social-icons{text-align: right;}
+	footer .social-icons a{
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		margin-left: 10px;
+
+		-webkit-transition: all 0.8s ease;
+		-moz-transition: all 0.8s ease;
+		-o-transition: all 0.8s ease;
+		transition: all 0.8s ease;
+
+		background-position: center center;
+		line-height: 0;
+	}
+
+	.social-icons a.fb{background: url(assets/social/icon_face.svg) no-repeat center center}
+	.social-icons a.in{background: url(assets/social/icon_Insta.svg) no-repeat center center}
+	.social-icons a.pi{background: url(assets/social/icon_Pint.svg) no-repeat center center}
+	.social-icons a.yt{background: url(assets/social/icon_Youtube.svg) no-repeat center center}
+
+	.social-icons a.fb:hover{background: url(assets/social/icon_face-hover.svg) no-repeat center center}
+	.social-icons a.in:hover{background: url(assets/social/icon_Insta-hover.svg) no-repeat center center}
+	.social-icons a.pi:hover{background: url(assets/social/icon_Pint-hover.svg) no-repeat center center}
+	.social-icons a.yt:hover{background: url(assets/social/icon_Youtube-hover.svg) no-repeat center center}

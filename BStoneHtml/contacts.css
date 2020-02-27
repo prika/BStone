@@ -1,0 +1,48 @@
+#adressSection{
+	background: #FFF url(assets/B_Simbolo_estatico_Contactos.svg) no-repeat 230px 400px fixed;
+	
+	-webkit-background-size: 450px;
+	-moz-background-size: 450px;
+	-o-background-size: 450px;
+	background-size: 450px;
+
+	padding: 290px 0;
+	
+	
+}
+
+#adressSection a{
+	font-family: 'Oswald', sans-serif;
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 30px;
+		color: #333;
+		text-decoration: none;
+
+		-webkit-transition: all 0.2s ease;
+		-moz-transition: all 0.2s ease;
+		-o-transition: all 0.2s ease;
+		transition: all 0.2s ease;
+}
+
+#adressSection address *{
+	font-style: normal;
+	font-size: 32px;
+	line-height: 40px;
+}
+
+#contactsSection{
+	background: #FFF url(assets/B_Simbolo_estatico_Contactos.svg) no-repeat 230px 400px fixed;
+
+	-webkit-background-size: 450px;
+	-moz-background-size: 450px;
+	-o-background-size: 450px;
+	background-size: 450px;
+
+	border-top: 1px solid #DDD;
+	padding: 145px 0;
+}
+
+	#contactsSection .row{
+		margin-bottom: 10px;
+	}
