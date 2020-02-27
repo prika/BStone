@@ -131,14 +131,17 @@
             width: 100%;
             height: 100%;
             
-            background: url(assets/intro_logo.svg) no-repeat fixed;
+            background: url(assets/intro_logo.svg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
 
             -webkit-background-size: 510px;
             -moz-background-size: 510px;
             -o-background-size: 510px;
             background-size: 510px;
 
-            background-position: center center;
+            
             opacity: 0;
 
             -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 46% 80%, 21% 100%, 0 100%);
@@ -170,10 +173,9 @@
 
 	
 
-
 	.line{
 		position: fixed;
-        background: rgba(240, 240, 240, 0.4);
+        background: rgba(240, 240, 240, 0.3);
         z-index: 4;
         display: block;
         opacity: 0;
@@ -186,7 +188,11 @@
 
 			width: 100%;
 			height: 1px;
-			animation: horizontalLineAnim 2s ease-in-out 7s forwards;
+            
+            -webkit-animation: horizontalLineAnim 2s ease-in-out 7s forwards;
+            -moz-animation: horizontalLineAnim 2s ease-in-out 7s forwards;
+            -o-animation: horizontalLineAnim 2s ease-in-out 7s forwards;
+            animation: horizontalLineAnim 2s ease-in-out 7s forwards;
 		}
 		.verticalLeftLine{
             top:0;
@@ -195,7 +201,11 @@
             
 			width: 1px;
 			height: 100vh;
-			animation: verticalLineAnim 2s ease-in-out 7s forwards;
+
+            -webkit-animation: verticalLineAnim 2s ease-in-out 7s forwards;
+            -moz-animation: verticalLineAnim 2s ease-in-out 7s forwards;
+            -o-animation: verticalLineAnim 2s ease-in-out 7s forwards;
+            animation: verticalLineAnim 2s ease-in-out 7s forwards;
 		}
 		.verticalRightLine{
             top:0;
@@ -204,5 +214,9 @@
             
 			width: 1px;
 			height: 100vh;
-			animation: verticalLineAnim2 2s ease-in-out 6s forwards;
+
+            -webkit-animation: verticalLineAnim2 2s ease-in-out 6s forwards;
+            -moz-animation: verticalLineAnim2 2s ease-in-out 6s forwards;
+            -o-animation: verticalLineAnim2 2s ease-in-out 6s forwards;
+            animation: verticalLineAnim2 2s ease-in-out 6s forwards;
 		}
