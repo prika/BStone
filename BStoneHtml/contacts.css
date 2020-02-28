@@ -6,30 +6,16 @@
 	-o-background-size: 450px;
 	background-size: 450px;
 
-	padding: 290px 0;
-	
-	
+	padding:220px 0;
 }
 
-#adressSection a{
-	font-family: 'Oswald', sans-serif;
-		font-weight: 300;
-		font-size: 20px;
-		line-height: 30px;
-		color: #333;
-		text-decoration: none;
+	#adressSection address h2{
+		height: 70px;
+	}
 
-		-webkit-transition: all 0.2s ease;
-		-moz-transition: all 0.2s ease;
-		-o-transition: all 0.2s ease;
-		transition: all 0.2s ease;
-}
-
-#adressSection address *{
-	font-style: normal;
-	font-size: 32px;
-	line-height: 40px;
-}
+	#adressSection .seeOnMap{
+		margin-top: 70px;
+	}
 
 #contactsSection{
 	background: #FFF url(assets/B_Simbolo_estatico_Contactos.svg) no-repeat 230px 400px fixed;
