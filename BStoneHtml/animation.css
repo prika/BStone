@@ -50,17 +50,17 @@
 
 @keyframes horizontalLineAnim {
     0% { top: 0;}
-    100% { top: 230px; opacity: 1;}
+    100% { top: 23%; opacity: 1;}
 }
 
 @keyframes verticalLineAnim {
     0% { left: 0;}
-    100% { left: 330px; opacity: 1;}
+    100% { left: 21%; opacity: 1;}
 }
 
 @keyframes verticalLineAnim2 {
     0% { right: 0;}
-    100% { right: 113px; opacity: 1;}
+    100% { right: 7%; opacity: 1;}
 }
 
 

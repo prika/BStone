@@ -1,5 +1,5 @@
 #adressSection{
-	background: #FFF url(assets/B_Simbolo_estatico_Contactos.svg) no-repeat 230px 400px fixed;
+	background: #FFF url(assets/B_Simbolo_estatico_Contactos.svg) no-repeat 220px 185% fixed;
 	
 	-webkit-background-size: 450px;
 	-moz-background-size: 450px;
@@ -13,12 +13,82 @@
 		height: 70px;
 	}
 
+
+
 	#adressSection .seeOnMap{
 		margin-top: 70px;
+		display: table;
+		text-align: left;
 	}
 
+		#adressSection .seeOnMap span{
+			display: table-cell;
+			vertical-align: middle;
+			/* max-width: 110px; */
+			/* padding-top: 0;
+			margin-top: 0; */
+			width: 97px;
+			line-height: 15px;
+		}
+
+		/* #adressSection .seeOnMap .icon{
+			overflow: hidden;
+		} */
+		#adressSection .seeOnMap .icon svg{
+			width: 250px; 
+			height: 35px;
+			/* background: url(assets/Seta_on.svg) no-repeat; */
+		}
+
+
+		.svgpath{
+			fill: none;
+			stroke:#333;
+			stroke-width:2;
+			
+			-webkit-transition: all 0.2s ease;
+			-moz-transition: all 0.2s ease;
+			-o-transition: all 0.2s ease;
+			transition: all 0.2s ease;
+		}
+
+		.arrow {opacity: 0;}
+
+		/* #adressSection .seeOnMap:hover .svgpath{
+			stroke: #c47c5a;
+		} */
+
+		#adressSection .seeOnMap .svgpath.pathInitial{
+			stroke-dasharray: 200;
+		}
+
+		#adressSection .seeOnMap:hover .svgpath.pathInitial{
+			animation: dash 0.2s ease forwards;
+		}
+
+		#adressSection .seeOnMap:hover .svgpath.arrow{
+			opacity: 1;
+			animation: dash 0.2s ease forwards;
+		}
+
+		@keyframes dash {
+			0% {
+				stroke-dasharray: 200;
+			}
+			100%{
+				stroke-dasharray: 240;
+			}
+		  }
+
+		
+		/* #adressSection .seeOnMap:hover .svgpath.pathInitial{
+			opacity: 0;
+		} */
+		
+		
+
 #contactsSection{
-	background: #FFF url(assets/B_Simbolo_estatico_Contactos.svg) no-repeat 230px 400px fixed;
+	background: #FFF url(assets/B_Simbolo_estatico_Contactos.svg) no-repeat 220px 185% fixed;
 
 	-webkit-background-size: 450px;
 	-moz-background-size: 450px;

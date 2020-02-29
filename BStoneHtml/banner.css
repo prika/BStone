@@ -26,6 +26,7 @@
                 position: fixed;
                 top: 374px;
                 left: 50%;
+                margin-top: -25px;
                 margin-left: -255px;
 
                 z-index: 2;
@@ -145,10 +146,14 @@
             
             opacity: 0;
 
-            -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 46% 80%, 21% 100%, 0 100%);
+            /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 46% 80%, 21% 100%, 0 100%);
             -o-clip-path: polygon(0 0, 100% 0, 100% 80%, 46% 80%, 21% 100%, 0 100%);
-            -ms-clip-path: polygon(0 0, 100% 0, 100% 80%, 46% 80%, 21% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 80%, 46% 80%, 21% 100%, 0 100%);
+            -ms-clip-path: polygon(0 0, 100% 0, 100% 80%, 46% 80%, 21% 100%, 0 100%); */
+            
+            clip-path: polygon(0px 0px, 100% 0px, 100% 55.61%, 65.58% 55.93%, 34.29% 99.70%, 0px 100%);
+        
+
+            /* clip-path: polygon(0 0, 100% 0, 100% 80%, 46% 80%, 21% 100%, 0 100%); */
         }
 
 	
@@ -198,4 +203,21 @@
             -moz-animation: verticalLineAnim2 2s ease-in-out 6s forwards;
             -o-animation: verticalLineAnim2 2s ease-in-out 6s forwards;
             animation: verticalLineAnim2 2s ease-in-out 6s forwards;
-		}
+        }
+        
+
+
+@media (max-width: 767px){
+        
+    #bannerImage::after{
+        background-size: 300px;
+        clip-path: polygon(0px 0px, 100% 0px, 100% 80%, 0px 100%);
+    }
+
+    #animatedlogo{ 
+        width: 300px;
+        margin-left: -150px;
+        margin-top: -8px;
+    }
+
+}

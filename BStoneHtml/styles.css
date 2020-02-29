@@ -80,7 +80,7 @@ body, p {
 
 		font-family: 'Oswald', sans-serif;
 		font-weight: normal;
-		font-size: 20px;
+		font-size: 15px;
 		letter-spacing: 2px;
 		color: #333333;
 	}
@@ -89,6 +89,7 @@ body, p {
 
 	#adressSection a{
 		text-transform: uppercase;
+		padding-left: 5%;
 	}
 	#adressSection p {
 		font-size: 38px;
@@ -98,7 +99,7 @@ body, p {
 	a:hover{ color: #c47c5a!important; }
 
 
-body{ background-color:#F0F0F0; }
+/* body{ background-color:#F0F0F0; } */
 address *{font-style: normal!important;}
 
 
