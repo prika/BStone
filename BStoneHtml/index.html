@@ -267,7 +267,7 @@
         <div class="container">
                 <div class="row">
                   
-                  <div class="product col-md-4">
+                  <div class="product col-md-4 col-sm-4">
                       <div class="containerImage">
                           <div class="productImage" style="background-image: url('product/atlantic_white.jpg');"></div>
                       </div>
@@ -278,7 +278,7 @@
                         </p>
                     </div>
 
-                    <div class="product col-md-4 rellax" data-rellax-speed="2">
+                    <div class="product col-md-4 col-sm-4 rellax" data-rellax-speed="2">
                       <div class="containerImage">
                           <div class="productImage" style="background-image: url('product/bambu_pink.jpg');"></div>
                       </div>
@@ -289,7 +289,7 @@
                       </p>
                     </div>
 
-                    <div class="product col-md-4">
+                    <div class="product col-md-4 col-sm-4">
                       <div class="containerImage">
                           <div class="productImage" style="background-image: url('product/black_magic.jpg');"></div>
                       </div>
@@ -476,7 +476,7 @@
       <section id="adressSection">
         <div class="row">
             <!-- <div class="buttonContainer col-md-offset-4 col-md-3"> -->
-              <a class="seeOnMap col-md-offset-4 col-md-3" href="https://goo.gl/maps/KYpeemR9z2YcZENQA" target="_blank" rel="nofollow">
+              <a class="seeOnMap col-md-offset-4 col-md-3 col-sm-offset-0 col-md-12" href="https://goo.gl/maps/KYpeemR9z2YcZENQA" target="_blank" rel="nofollow">
                 <span>SEE ON MAP</span>
                 <span class="icon">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -506,14 +506,14 @@
       <section id="contactsSection">
           <div class="row">
             <div class="col-md-offset-6">
-              <div class="col-md-2"><p>e.</p></div>
-              <div class="col-md-4"><a itemprop="email" href="mailto:info@bstone.pt">info@bstone.pt</a></div>
+              <div class="col-md-2 col-sm-4 col-xs-4"><p>e.</p></div>
+              <div class="col-md-4 col-sm-8 col-xs-8"><a itemprop="email" href="mailto:info@bstone.pt">info@bstone.pt</a></div>
             </div>
           </div>
           <div class="row">
             <div class="col-md-offset-6">
-              <div class="col-md-2"><p>t.</p></div>
-              <div class="col-md-4"><span itemprop="telephone">(+351)  268  848  030</span></div>
+              <div class="col-md-2 col-sm-4 col-xs-4"><p>t.</p></div>
+              <div class="col-md-4 col-sm-8 col-xs-8"><span id="telephone"itemprop="telephone">(+351)  268  848  030</span></div>
             </div>
           </div>
       </section>
@@ -527,10 +527,8 @@
             <div class="social-icons col-md-6 centered-sm centered-xs">
               <a href="https://www.facebook.com/bstone.marble/" target="_blank" class="fb" rel="nofollow"></a>
               <a href="https://www.instagram.com/bstone.marble/" target="_blank" class="in" rel="nofollow"></a>
-              <a href="https://www.pinterest.pt/bstone_marble/" target="_blank" class="pi" rel="nofollow"></a>
-              
-              <a href="https://www.linkedin.com/company/bloco-b/" target="_blank" class="pi" rel="nofollow"></a>
-              <a href="" target="_blank" class="yt" rel="nofollow"></a>
+              <a href="https://www.pinterest.pt/bstone_marble/" target="_blank" class="pi" rel="nofollow"></a>     
+              <a href="https://www.linkedin.com/company/bloco-b/" target="_blank" class="lk" rel="nofollow"></a>
             </div>
         </div>
       </footer>
@@ -540,33 +538,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.0.0/rellax.min.js"></script>
   
     <script> 
-
           // $('body').addClass('');
-
           // window.addEventListener('load', showPage, false);
-
-          // function showPage(){
-            
-          // }
 
           $(window).on( "load", function(){
             $('body').removeClass('js-loading');
             $('html, body').animate({ scrollTop: 0 }, 500 );
           });
 
-          // $(window).scroll(function(){
-          //   if( $(window).scrollTop() > 200 ){
-          //       $('body').addClass('hideAnimation');
-          //   }else{
-          //       $('body').removeClass('hideAnimation');
-          //   }
-          // });
-
           $(document).ready(function() {
 
-            // if( $(window).scrollTop() > 200 ){
-            //     $('body').addClass('hideAnimation');
-            // }
             $('html, body').animate({ scrollTop: 0 }, 500 );
             function scrollPage(){
               $('html').css('overflow-y', 'visible');
@@ -583,7 +564,6 @@
             var rellax = new Rellax('.rellax');
           });
 
-         
     </script>
   </body>
 </html>

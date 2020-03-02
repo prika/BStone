@@ -13,8 +13,6 @@
 		height: 70px;
 	}
 
-
-
 	#adressSection .seeOnMap{
 		margin-top: 70px;
 		display: table;
@@ -79,12 +77,6 @@
 				stroke-dasharray: 240;
 			}
 		  }
-
-		
-		/* #adressSection .seeOnMap:hover .svgpath.pathInitial{
-			opacity: 0;
-		} */
-		
 		
 
 #contactsSection{
@@ -102,3 +94,24 @@
 	#contactsSection .row{
 		margin-bottom: 10px;
 	}
+
+
+
+@media (max-width: 767px) { 
+	
+	#adressSection{ padding: 70px 10px;}
+
+
+		#adressSection .seeOnMap{color: #c47c5a; margin-bottom: 70px;}
+		#adressSection .seeOnMap .icon svg {
+			width: 160px;
+			height: 51px;
+		}
+		#adressSection .seeOnMap .svgpath.pathInitial{stroke-dasharray: 240;}
+		#adressSection .seeOnMap .svgpath.arrow{opacity: 1;}
+
+		#adressSection address h2 {height: 55px;}
+
+	#contactsSection{ padding: 70px 10px 140px;}
+
+}

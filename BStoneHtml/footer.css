@@ -59,8 +59,31 @@ footer .scrollButton{
 	.social-icons a.in{background: url(assets/social/icon_Insta.svg) no-repeat center center}
 	.social-icons a.pi{background: url(assets/social/icon_Pint.svg) no-repeat center center}
 	.social-icons a.yt{background: url(assets/social/icon_Youtube.svg) no-repeat center center}
+	.social-icons a.lk{background: url(assets/social/icon_linkedin.svg) no-repeat center center}
 
 	.social-icons a.fb:hover{background: url(assets/social/icon_face-hover.svg) no-repeat center center}
 	.social-icons a.in:hover{background: url(assets/social/icon_Insta-hover.svg) no-repeat center center}
 	.social-icons a.pi:hover{background: url(assets/social/icon_Pint-hover.svg) no-repeat center center}
 	.social-icons a.yt:hover{background: url(assets/social/icon_Youtube-hover.svg) no-repeat center center}
+	.social-icons a.lk:hover{background: url(assets/social/icon_Youtube-hover.svg) no-repeat center center}
+
+
+
+	@media (max-width: 767px) { 
+		
+		footer{
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+
+			footer .logoFooter,
+			footer .social-icons{
+				margin: 30px 0;
+			}
+			footer .social-icons a{ 
+				width: 60px;
+				height: 60px;
+				margin-top: 20px;
+				background-size: 30px!important;
+			}
+	}

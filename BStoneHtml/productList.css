@@ -131,6 +131,9 @@
 
 @media (max-width: 767px) { 
 
+    .productsList{
+        padding-bottom: 40px;
+    }
     .product{
         margin: 40px auto 0!important;
         max-width: 60%;
