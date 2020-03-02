@@ -1,3 +1,18 @@
+
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+    animation-play-state: paused !important;
+}
+    
+/* .hideAnimation #animatedlogo * {
+    animation-play-state: paused !important;
+}  */
+
+html {
+    overflow-y: hidden;
+}
+
 /* -webkit-keyframes myanimation1, 
 -moz-keyframes myanimation1,
 -ms-keyframes myanimation1, */

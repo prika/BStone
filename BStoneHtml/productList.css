@@ -132,7 +132,7 @@
 @media (max-width: 767px) { 
 
     .product{
-        margin: 40px auto;
+        margin: 40px auto 0!important;
         max-width: 60%;
     }
     
@@ -154,9 +154,10 @@
                 width: 100%;}
 
         .product:nth-of-type(2n){
-            margin-top: 15px;
+            margin-top: 40px;
             transform: translate3d(0,0,0) !important;
         }
+       
 
 
 }
