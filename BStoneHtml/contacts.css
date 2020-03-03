@@ -44,10 +44,10 @@
 			stroke:#333;
 			stroke-width:2;
 			
-			-webkit-transition: all 0.2s ease;
-			-moz-transition: all 0.2s ease;
-			-o-transition: all 0.2s ease;
-			transition: all 0.2s ease;
+			-webkit-transition: all 0.2s cubic-bezier(0, .5, 0, 1);
+			-moz-transition: all 0.2s cubic-bezier(0, .5, 0, 1);
+			-o-transition: all 0.2s cubic-bezier(0, .5, 0, 1);
+			transition: all 0.2s cubic-bezier(0, .5, 0, 1);
 		}
 
 		.arrow {opacity: 0;}
@@ -95,6 +95,10 @@
 		margin-bottom: 10px;
 	}
 
+	#contactsSection p{
+		text-align: center;
+	}
+
 
 
 @media (max-width: 767px) { 
@@ -113,5 +117,7 @@
 		#adressSection address h2 {height: 55px;}
 
 	#contactsSection{ padding: 70px 10px 140px;}
+
+	#contactsSection p{text-align: left;}
 
 }

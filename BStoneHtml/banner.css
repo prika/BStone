@@ -150,6 +150,7 @@
             -o-clip-path: polygon(0px 0px, 100% 0px, 100% 55.61%, 65.58% 55.93%, 34.29% 99.70%, 0px 100%);
             -ms-clip-path: polygon(0px 0px, 100% 0px, 100% 55.61%, 65.58% 55.93%, 34.29% 99.70%, 0px 100%);
             clip-path: polygon(0px 0px, 100% 0px, 100% 55.61%, 65.58% 55.93%, 34.29% 99.70%, 0px 100%);
+        
         }
 
 	
@@ -216,11 +217,17 @@
     }
 }
 
-@media only screen and (device-width: 768px) {
+/* @media only screen and (device-width: 768px) {
 
     #bannerImage::after{
-        /* background-size: 300px; */
+        background-size: 300px;
         background-attachment: initial;
     }
+
+    #animatedlogo{ 
+        width: 300px;
+        margin-left: -150px;
+        margin-top: -8px;
+    }
     
-  }
+  } */
