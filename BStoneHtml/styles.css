@@ -14,7 +14,7 @@
     font-family: 'Oswald';
     src: url('assets/fonts/hinted-Oswald-Regular.eot');
     src: url('assets/fonts/hinted-Oswald-Regular.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/hinted-Oswald-Regular.woff2') format('woff2'),
+        /* url('assets/fonts/hinted-Oswald-Regular.woff2') format('woff2'), */
         url('assets/fonts/hinted-Oswald-Regular.woff') format('woff'),
         url('assets/fonts/hinted-Oswald-Regular.ttf') format('truetype'),
         url('assets/fonts/hinted-Oswald-Regular.svg#Oswald-Regular') format('svg');
