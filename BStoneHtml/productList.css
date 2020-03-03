@@ -149,15 +149,27 @@
                 height: 373px;
             }
 
-        .product .productName{
-            top: 115px!important;
+        .product .productName,
+        .product:nth-of-type(2n) .productName{
+            /* top: 115px!important; */
+            top: -22px;
+            left: 50%;
+            right: auto;
+            margin-left: -50px;
+            
         }
+
+            .product .productName:before{
+                border: 0px;
+            }
+
             .product .productName span:before{
                 background-color: rgba(240, 240, 240, 1); 
-                width: 100%;}
+                width: 100%;
+            }
 
         .product:nth-of-type(2n){
-            margin-top: 40px;
+            /* margin-top: 40px; */
             transform: translate3d(0,0,0) !important;
         }
        
