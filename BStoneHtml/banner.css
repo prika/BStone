@@ -217,7 +217,7 @@
     }
 }
 
-/* @media only screen and (device-width: 768px) {
+@media only screen and (device-width: 768px) {
 
     #bannerImage::after{
         background-size: 300px;
@@ -230,4 +230,4 @@
         margin-top: -8px;
     }
     
-  } */
+  }
