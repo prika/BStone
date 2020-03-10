@@ -11,7 +11,7 @@
 	position: relative;
 }
 
-	#adressSection address h2{
+	#adressSection .adressContainer h2{
 		height: 70px;
 	}
 
@@ -126,7 +126,7 @@
 		#adressSection .seeOnMap .svgpath.pathInitial{stroke-dasharray: 240;}
 		#adressSection .seeOnMap .svgpath.arrow{opacity: 1;}
 
-		#adressSection address h2 {height: 55px;}
+		#adressSection .adressContainer h2 {height: 55px;}
 
 	#contactsSection{ padding: 70px 10px 140px;}
 

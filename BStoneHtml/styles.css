@@ -91,7 +91,7 @@ body, p {
 		white-space: nowrap;
 	}
 
-	#adressSection p {
+	#adressSection address {
 		font-size: 35px;
 		line-height: 40px;
 	}
