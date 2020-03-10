@@ -1,4 +1,5 @@
-#adressSection{
+#adressSection,
+#contactsSection{
 	background: #FFF url(assets/B_Simbolo_estatico_Contactos.svg) no-repeat 220px 185% fixed;
 	
 	-webkit-background-size: 450px;
@@ -6,7 +7,8 @@
 	-o-background-size: 450px;
 	background-size: 450px;
 
-	padding:220px 0;
+	padding: 220px 0;
+	position: relative;
 }
 
 	#adressSection address h2{
@@ -79,14 +81,8 @@
 		  }
 		
 
+
 #contactsSection{
-	background: #FFF url(assets/B_Simbolo_estatico_Contactos.svg) no-repeat 220px 185% fixed;
-
-	-webkit-background-size: 450px;
-	-moz-background-size: 450px;
-	-o-background-size: 450px;
-	background-size: 450px;
-
 	border-top: 1px solid #DDD;
 	padding: 145px 0;
 }
@@ -100,11 +96,27 @@
 	}
 
 
+/* Vertical Line */
+	#adressSection::before,
+	#adressSection::after,
+	#contactsSection::before,
+	#contactsSection::after{
+		content: '';
+		position: absolute;
+			top: 0;
+			bottom: 0;
+		width: 1px;
+		height: 100%;
+		background-color: #DDD;
+	}
 
-@media (max-width: 767px) { 
+	#adressSection::before,
+	#contactsSection::before{ left: 21%; }
+
+
+@media (max-width: 768px) { 
 	
 	#adressSection{ padding: 70px 10px;}
-
 
 		#adressSection .seeOnMap{color: #c47c5a; margin-bottom: 70px;}
 		#adressSection .seeOnMap .icon svg {
@@ -120,4 +132,14 @@
 
 	#contactsSection p{text-align: left;}
 
+}
+
+@media (max-width: 991px){
+
+		#adressSection::before,
+		#adressSection::after,
+		#contactsSection::before,
+		#contactsSection::after {
+			display: none;
+		}
 }

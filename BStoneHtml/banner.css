@@ -3,7 +3,6 @@
 	margin: 0; padding: 0;
 	position: relative;
     z-index: 0;
-    
     overflow: hidden;
 }
 
@@ -136,8 +135,11 @@
             
             background-image: url(assets/intro_logo.svg);
             background-repeat: no-repeat; 
-            background-position: center;
-            background-attachment: fixed;  
+            background-position: center center;
+            background-attachment: fixed; 
+
+            /* transform: translate3d(0,0,0);
+            -webkit-transform: translate3d(0,0,0); */
 
             -webkit-background-size: 510px;
             -moz-background-size: 510px;
@@ -155,7 +157,7 @@
 
 	
 	.line{
-		position: fixed;
+		position: absolute;
         background: rgba(240, 240, 240, 0.3);
         z-index: 4;
         display: block;
