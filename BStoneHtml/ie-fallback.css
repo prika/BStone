@@ -17,3 +17,9 @@
 .ie-fallback .social-icons a.pi:hover{background: url(assets/social/icon_Pint-hover.svg) no-repeat center center}
 .ie-fallback .social-icons a.yt:hover{background: url(assets/social/icon_Youtube-hover.svg) no-repeat center center}
 .ie-fallback .social-icons a.lk:hover{background: url(assets/social/icon_linkedin.svg) no-repeat center center}
+
+
+
+
+.ie-fallback.ie9{background-color: red!important;}
+.ie-fallback.ie10{background-color: blue!important;}
