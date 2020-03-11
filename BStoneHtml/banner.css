@@ -34,7 +34,8 @@
             #animatedlogo{
                 position: fixed;
                 /* top: 374px; */
-                top: calc(50% - 50px);
+                /* top: calc(50% - 50px); */
+                transform: translateY(50vh) translateY(-100px);
                 left: 50%;
                 /* margin-top: -100px;*/
                 margin-left: -255px; 

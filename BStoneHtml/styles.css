@@ -51,9 +51,10 @@ body, p {
 	font-size: 25px;
 	line-height: 30px;
 	color: #333;
-	/* text-rendering: optimizeLegibility;
+	
+	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale; */
+	-moz-osx-font-smoothing: grayscale;
 }
 
 	#contactsSection *{
