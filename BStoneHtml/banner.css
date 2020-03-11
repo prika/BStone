@@ -250,8 +250,8 @@
   }
 
 
-.lt-ie9 #bannerImage,
-.lt-ie9 #bannerImage::before,
-.lt-ie9 #bannerImage::after{
-    opacity: 1;
+.ie-fallback #bannerImage,
+.ie-fallback #bannerImage::before,
+.ie-fallback #bannerImage::after{
+    opacity: 1!important;
 }
