@@ -1,5 +1,6 @@
 <!doctype html>
-<!--[if IE 9]>  <html class="ie-fallback" lang="en" itemscope itemtype="http://schema.org/WebPage" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 9]>  <html class="ie-fallback ie9" lang="en" itemscope itemtype="http://schema.org/WebPage" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 10]>  <html class="ie-fallback ie10" lang="en" itemscope itemtype="http://schema.org/WebPage" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml"> <![endif]-->
 <html lang="en" itemscope itemtype="http://schema.org/WebPage" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
 
   <head>
@@ -88,6 +89,7 @@
     <link href="footer.css" rel="stylesheet">
     <link href="animation.css" rel="stylesheet">
     <!--[if IE 9]> <link href="ie-fallback.css" rel="stylesheet"> <![endif]-->
+    <!--[if IE 10]> <link href="ie-fallback.css" rel="stylesheet"> <![endif]-->
   </head>
 
   <body itemscope itemtype="http://schema.org/WebPage" class="js-loading">
@@ -565,10 +567,10 @@
 
           // window.addEventListener('load', showPage, false);
 
-          $(window).on( "load", function(){
-            $('body').removeClass('js-loading');
-            $('html, body').animate({ scrollTop: 0 }, 500 );
-          });
+          // $(window).on( "load", function(){
+          //   $('body').removeClass('js-loading');
+          //   $('html, body').animate({ scrollTop: 0 }, 500 );
+          // });
 
           $(document).ready(function() {
 
@@ -577,15 +579,12 @@
             // Then we set the value in the --vh custom property to the root of the document
             // document.documentElement.style.setProperty('--vh', `${vh}px`); 
 
-
-
-            $('html, body').animate({ scrollTop: 0 }, 500 );
-            function scrollPage(){
-              $('html').css('overflow-y', 'visible');
+            // $('html, body').animate({ scrollTop: 0 }, 500 );
+            // function scrollPage(){
+            //   $('html').css('overflow-y', 'visible');
               
-            }
-            setTimeout(scrollPage, 8000);
-
+            // }
+            // setTimeout(scrollPage, 8000);
 
             $('.scrollButton').click(function(){
                 $('html, body').animate({ scrollTop: 0 }, 500 );
@@ -593,13 +592,6 @@
 
             var rellax = new Rellax('.rellax');
           });
-
-
-          // window.addEventListener('resize', () => {
-              
-          //     let vh = window.innerHeight * 0.01;
-          //     document.documentElement.style.setProperty('--vh', `${vh}px`);
-          // });
 
     </script>
   </body>
