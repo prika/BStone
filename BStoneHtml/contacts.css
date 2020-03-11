@@ -91,9 +91,14 @@
 		margin-bottom: 10px;
 	}
 
-	#contactsSection p{
-		text-align: center;
+	#contactsSection p,
+	#contactsSection a{
+		display: inline-block;
+		padding-right: 45px;
+		
 	}
+
+	#contactsSection p{margin-left: -65px;}
 
 
 /* Vertical Line */

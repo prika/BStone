@@ -20,13 +20,12 @@
 
     .productsList .container {
         background-color: #F0F0F0;
-        max-width: 900px;
+        max-width: 1000px;
     }
 
 .product{
     position: relative;
-    transform: translateZ(.25px);
-    cursor: url('assets/favicon/favicon-16x16.png'), auto;	
+    transform: translateZ(.25px);	
 }
 
     .product .containerImage{
@@ -46,7 +45,7 @@
         }
 
     .product .productName{
-        width: 120px;
+        width: 155px;
         position: absolute;
         right: -20px;
         top: 210px;
@@ -62,12 +61,13 @@
         .product .productName:before{
             content: '';
             display: block;
-            border: 1px solid #333;
             width: 32px;
+            height: 2px;
+            background: #333;
             display: block;
             position: absolute;
-            top: 12px;
-            left: -10px;
+                top: 12px;
+                left: -10px;
         }
 
         .product .productName span{
@@ -84,9 +84,9 @@
             bottom: 0;
             left: 0;
             z-index: -1;
-            width: 0;
 
-            background-color: rgba(240, 240, 240, 0);
+            background-color: rgba(240, 240, 240, 1); 
+            width: 100%;
             
             -webkit-transition: all 0.5s ease;
             -moz-transition: all 0.5s ease;
@@ -112,11 +112,6 @@
 
 .product:hover .containerImage img{ transform: scale(1.1); }
 .product:hover .productName{ top: 115px;}
-
-.product:hover .productName span:before{
-    background-color: rgba(240, 240, 240, 1); 
-    width: 100%;
-}
 
 
 
