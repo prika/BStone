@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'Noe Display';
     src: url('assets/fonts/NoeDisplay-Black.eot');
-    src: url('assets/fonts/NoeDisplay-Black.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/NoeDisplay-Black.woff2') format('woff2'),
-        url('assets/fonts/NoeDisplay-Black.woff') format('woff'),
+    src: url('assets/fonts/NoeDisplay-Black.woff2') format('woff2'),
+		url('assets/fonts/NoeDisplay-Black.woff') format('woff'),
+		/* url('assets/fonts/NoeDisplay-Black.eot?#iefix') format('embedded-opentype'), */
         url('assets/fonts/NoeDisplay-Black.ttf') format('truetype'),
         url('assets/fonts/NoeDisplay-Black.svg#NoeDisplay-Black') format('svg');
     font-weight: 900;
