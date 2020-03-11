@@ -26,7 +26,7 @@
 .product{
     position: relative;
     transform: translateZ(.25px);
-    cursor: url('assets/favicon.ico/favicon-16x16.png'), auto;	
+    cursor: url('assets/favicon/favicon-16x16.png'), auto;	
 }
 
     .product .containerImage{
