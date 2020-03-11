@@ -105,7 +105,7 @@
 
 		background-position: center center;
 
-        /* opacity: 0; */
+        opacity: 0;
 	}
 
 
@@ -128,7 +128,7 @@
             height: 100%;
 
             background: rgba(0, 0, 0, 0.15);
-            /* opacity: 0; */
+            opacity: 0;
         }
         
         #bannerImage::after{
@@ -162,7 +162,7 @@
             -o-background-size: 510px;
             background-size: 510px;
     
-            /* opacity: 0; */
+            opacity: 0;
 
             -webkit-clip-path: polygon(0px 0px, 100% 0px, 100% 55.61%, 65.58% 55.93%, 34.29% 99.70%, 0px 100%);
             -o-clip-path: polygon(0px 0px, 100% 0px, 100% 55.61%, 65.58% 55.93%, 34.29% 99.70%, 0px 100%);
@@ -248,3 +248,10 @@
     }
     
   }
+
+
+.lt-ie9 #bannerImage,
+.lt-ie9 #bannerImage::before,
+.lt-ie9 #bannerImage::after{
+    opacity: 1;
+}
