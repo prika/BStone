@@ -23,3 +23,19 @@
 
 .ie-fallback.ie9{background-color: red!important;}
 .ie-fallback.ie10{background-color: blue!important;}
+
+
+
+
+/* #fallback, #fallback *{margin: 0; padding: 0;line-height: 120%}
+#fallback{background:url(/ie/fallback_bg.png) repeat-x center top; height: 70px; width: 100%;position: relative;z-index: 99999;}
+#fallback .containerfallback{width: 980px; margin: 0 auto;}
+#fallback h3{font-family: Arial;font-size: 14px;font-weight: bold;color: #fff;margin-top: 8px;margin-bottom: 3px;}
+#fallback p{font-family: Arial;font-size: 12px;line-height: 120%;font-weight: normal;color: #fff;width: 610px;}
+#fallback a{font-family: Arial;font-size: 12px;line-height: 120%;font-weight: normal;color: #C5DFFF;text-decoration: none;}
+#fallback a:hover{text-decoration: underline;}
+#fallback .chr{height: 50px;line-height: 30px;width: 130px;background: url(/ie/chr.jpg) no-repeat left top;margin-top: 15px;padding-left: 35px;}
+#fallback .ff{height: 50px;line-height: 30px;width: 130px;background: url(/ie/ff.jpg) no-repeat left top; margin-top: 15px;margin-left: 5px;padding-left: 35px;}
+#fallback .right a {line-height: 31px;}
+#fallback .left {float: left;}
+#fallback .right {float: right;width: 320px;} */
