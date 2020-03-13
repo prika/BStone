@@ -30,20 +30,6 @@ $('html').addClass(result);
 
 
 
-
-
-// <?php 
-// function browser_info($agent=null) {
-//   $known = array('msie', 'firefox', 'safari', 'webkit', 'opera', 'netscape',
-//   'konqueror', 'gecko');
-//   $agent = strtolower($agent ? $agent : $_SERVER['HTTP_USER_AGENT']);
-//   $pattern = '#(?<browser>' . join('|', $known) . ')[/ ]+(?<version>[0-9]+(?:\.[0-9]+)?)#';
-//   if (!preg_match_all($pattern, $agent, $matches)) return array();
-//   $i = count($matches['browser'])-1;
-//   return array($matches['browser'][$i] => $matches['version'][$i]);
-// }
-
-// $user_agent = browser_info();
 // if($user_agent['msie']=="8.0" || $user_agent['msie']=="7.0" || $user_agent['msie']=="6.0"){
 
     // if($LG=="pt"){
