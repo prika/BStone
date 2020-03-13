@@ -29,9 +29,7 @@ var result = IEdetection();
 $('html').addClass(result);
 
 
-
 // if($user_agent['msie']=="8.0" || $user_agent['msie']=="7.0" || $user_agent['msie']=="6.0"){
-
     // if($LG=="pt"){
     // $link_chrome = "https://www.google.com/intl/pt/chrome/browser/";
     // $link_firefox = "http://www.mozilla.org/pt-PT/firefox/new/";
@@ -44,7 +42,3 @@ $('html').addClass(result);
     //               <a href='$link_firefox' rel='nofollow' target='_blank'>Mozilla Firefox</a> para aproveitar todas as funcionalidades do nosso site.";
     // }
 // }
-
-
-
-
