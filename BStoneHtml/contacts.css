@@ -1,6 +1,10 @@
 #adressSection,
 #contactsSection{
-	background: #FFF url(assets/B_Simbolo_estatico_Contactos.svg) no-repeat 220px 185% fixed;
+	background-color: #FFF;
+	background-image: url(assets/B_Simbolo_estatico_Contactos.svg);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: 220px 185%;
 	
 	-webkit-background-size: 450px;
 	-moz-background-size: 450px;

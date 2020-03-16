@@ -2,15 +2,7 @@
     background-color: #F0F0F0;
     background-image: url(assets/B_Simbolo_estatico_Corpo.svg);
     background-repeat: no-repeat;
-
-    /* -webkit-background-attachment: fixed;
-    -moz-background-attachment: fixed;
-    -o-background-attachment: fixed; */
     background-attachment: fixed;
-
-    /* -webkit-background-position: 65% bottom;
-    -moz-background-position: 65% bottom;
-    -o-background-position: 65% bottom; */
     background-position: 65% bottom;
 
     -webkit-background-size: 200px;
