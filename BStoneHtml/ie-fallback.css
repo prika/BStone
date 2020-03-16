@@ -4,6 +4,15 @@
     opacity: 1!important;
 }
 
+
+
+.ie-fallback .productsList{
+    /* background: url(assets/B_Simbolo_estatico_Corpo.svg) no-repeat 65% bottom fixed; */
+    background-size: 65%;
+}
+
+
+
 .ie-fallback .social-icons a{background-size: 20px!important;}
 .ie-fallback .social-icons a.fb{background: url(assets/social/icon_face.svg) no-repeat center center}
 .ie-fallback .social-icons a.in{background: url(assets/social/icon_Insta.svg) no-repeat center center}
@@ -16,13 +25,6 @@
 .ie-fallback .social-icons a.pi:hover{background: url(assets/social/icon_Pint-hover.svg) no-repeat center center}
 .ie-fallback .social-icons a.yt:hover{background: url(assets/social/icon_Youtube-hover.svg) no-repeat center center}
 .ie-fallback .social-icons a.lk:hover{background: url(assets/social/icon_linkedin-hover.svg) no-repeat center center}
-
-/* .ie-fallback .social-icons a.fb:hover{background: url(assets/social/icon_face-hover.svg) no-repeat center center}
-.ie-fallback .social-icons a.in:hover{background: url(assets/social/icon_insta-hover.svg) no-repeat center center}
-.ie-fallback .social-icons a.pi:hover{background: url(assets/social/icon_pint-hover.svg) no-repeat center center}
-.ie-fallback .social-icons a.yt:hover{background: url(assets/social/icon_youtube-hover.svg) no-repeat center center}
-.ie-fallback .social-icons a.lk:hover{background: url(assets/social/icon_linkedin.svg) no-repeat center center} */
-
 
 /* 
 #fallback, #fallback *{margin: 0; padding: 0;line-height: 120%}
