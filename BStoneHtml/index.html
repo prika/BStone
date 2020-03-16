@@ -582,8 +582,8 @@
           // window.addEventListener('load', showPage, false);
 
           $(window).on( "load", function(){
-            $('body').removeClass('js-loading');
-            $('html, body').animate({ scrollTop: 0 }, 500 );
+              $('body').removeClass('js-loading');
+              $('html, body').animate({ scrollTop: 0 }, 500 );
           });
 
           $(document).ready(function() {
@@ -597,10 +597,8 @@
 
             function scrollPage(){
               $('html').css('overflow-y', 'visible');
-              
             }
-
-            setTimeout(scrollPage, 8000);
+            setTimeout(scrollPage, 7000);
 
             $('.scrollButton').click(function(){
                 $('html, body').animate({ scrollTop: 0 }, 500 );

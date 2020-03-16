@@ -6,12 +6,12 @@
 
 
 
-.productsList{
+.ie-fallback .productsList{
     background-image: url(assets/ie/b_simbolo_estatico_corpo.png);
 }
 
-#adressSection,
-#contactsSection{
+.ie-fallback #adressSection,
+.ie-fallback #contactsSection{
     background-image: url(assets/ie/simbolo_b_estatico_contactos.png);
 }
 
