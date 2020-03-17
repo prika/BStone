@@ -1,3 +1,7 @@
+.ie-fallback.ie9 #animatedlogo{
+    top: 374px!important;
+}
+
 .ie-fallback.ie9 #bannerImage,
 .ie-fallback.ie9 #bannerImage::before,
 .ie-fallback.ie9 #bannerImage::after{

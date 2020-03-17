@@ -32,10 +32,10 @@
 
             #animatedlogo{
                 position: fixed;
-                /* top: 374px; */
                 top: calc(50% - 50px);
-                
                 left: 50%;
+
+                /* top: 374px; */
                 /* margin-top: -100px;*/
                 margin-left: -255px; 
 
@@ -150,16 +150,12 @@
             background-position: center center;
             background-attachment: fixed; 
 
-            /* transform: translate3d(0,0,0);
-            -webkit-transform: translate3d(0,0,0); */
+            /* -webkit-overflow-scrolling: touch; */
 
             -webkit-background-size: 510px;
             -moz-background-size: 510px;
             -o-background-size: 510px;
             background-size: 510px;
-    
-            /* testing opacity */
-            opacity: 1;
 
             -webkit-clip-path: polygon(0px 0px, 100% 0px, 100% 55.61%, 65.58% 55.93%, 34.29% 99.70%, 0px 100%);
             -o-clip-path: polygon(0px 0px, 100% 0px, 100% 55.61%, 65.58% 55.93%, 34.29% 99.70%, 0px 100%);
@@ -250,3 +246,40 @@
     }
     
   }
+
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    #bannerImage::after{background-attachment: initial!important;}
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    #bannerImage::after{background-attachment: initial!important;}
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    #bannerImage::after{background-attachment: initial!important;}
+}
+
+/* ----------- iPhone X ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    #bannerImage::after{background-attachment: initial!important;}
+}
