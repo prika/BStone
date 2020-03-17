@@ -588,10 +588,11 @@
 
           $(document).ready(function() {
 
-            // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-            // let vh = window.innerHeight * 0.01;
-            // Then we set the value in the --vh custom property to the root of the document
-            // document.documentElement.style.setProperty('--vh', `${vh}px`); 
+            // Altura da viewport multiplicada por 1% para obter um valor para vh
+            let vh = window.innerHeight * 0.01;
+            
+            // Configura o valor em --vh na raiz do documento
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
 
             $('html, body').animate({ scrollTop: 0 }, 500 );
 
@@ -605,6 +606,12 @@
             });
 
             var rellax = new Rellax('.rellax');
+          });
+
+          window.addEventListener('resize', () => {
+            // Executa o mesmo script de antes
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
           });
 
     </script>
