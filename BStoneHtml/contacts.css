@@ -152,3 +152,8 @@
 			display: none;
 		}
 }
+
+
+@media only screen and (device-width: 768px) {
+    #adressSection address{font-size: 32px;}
+}

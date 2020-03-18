@@ -583,7 +583,7 @@
 
           $(window).on( "load", function(){
               $('body').removeClass('js-loading');
-              $('html, body').animate({ scrollTop: 0 }, 500 );
+              $('html, body').animate({ scrollTop: 0 }, 100 );
           });
 
           $(document).ready(function() {
@@ -594,7 +594,7 @@
             // Configura o valor em --vh na raiz do documento
             document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-            $('html, body').animate({ scrollTop: 0 }, 500 );
+            $('html, body').animate({ scrollTop: 0 }, 100 );
 
             function scrollPage(){
               $('html').css('overflow-y', 'visible');
@@ -602,7 +602,7 @@
             setTimeout(scrollPage, 7000);
 
             $('.scrollButton').click(function(){
-                $('html, body').animate({ scrollTop: 0 }, 500 );
+                $('html, body').animate({ scrollTop: 0 }, 800 );
             });
 
             var rellax = new Rellax('.rellax');
