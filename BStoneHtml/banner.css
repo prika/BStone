@@ -151,8 +151,6 @@
             background-position: center center;
             background-attachment: fixed; 
 
-            /* -webkit-overflow-scrolling: touch; */
-
             -webkit-background-size: 510px;
             -moz-background-size: 510px;
             -o-background-size: 510px;
