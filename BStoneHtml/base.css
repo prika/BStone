@@ -122,9 +122,6 @@ svg:not(:root){overflow:hidden}
 
 
 
-.containerLimit{
-	max-width: 1140px;
-}
 .container{ 
 	/* max-width: 1140px; */
 	max-width: 1630px;
