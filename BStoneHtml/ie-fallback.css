@@ -8,8 +8,6 @@
     opacity: 1!important;
 }
 
-
-
 .ie-fallback .productsList{
     background-image: url(assets/ie/b_simbolo_estatico_corpo.png);
 }
@@ -18,7 +16,6 @@
 .ie-fallback #contactsSection{
     background-image: url(assets/ie/simbolo_b_estatico_contactos.png);
 }
-
 
 .ie-fallback .social-icons a{background-size: 20px!important;}
 .ie-fallback .social-icons a.fb{background: url(assets/social/icon_face.svg) no-repeat center center}

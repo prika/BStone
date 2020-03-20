@@ -261,6 +261,8 @@ html { overflow-y: hidden; }
     100% { 
         opacity: 0; 
         transform: translateY(2rem);
+        display: none;
+        
     }
 }
 
@@ -272,6 +274,8 @@ html { overflow-y: hidden; }
     100% { 
         opacity: 0; 
         transform: translateY(2rem);
+        display: none;
+        
     }
 }
 
@@ -283,6 +287,8 @@ html { overflow-y: hidden; }
     100% { 
         opacity: 0; 
         transform: translateY(2rem);
+        display: none;
+        
     }
 }
 
@@ -294,6 +300,8 @@ html { overflow-y: hidden; }
     100% { 
         opacity: 0; 
         transform: translateY(2rem);
+        display: none;
+        
     }
 }
 
@@ -301,44 +309,52 @@ html { overflow-y: hidden; }
 
 @-webkit-keyframes changeLogos2 {
     0% { 
+        display: block;
         opacity: 0;
         transform: translateY(-2rem);
     }
     100% { 
         opacity: 1;
+        display: block;
         transform: none;
     }
 }
 
 @-moz-keyframes changeLogos2 {
     0% { 
+        display: block;
         opacity: 0;
         transform: translateY(-2rem);
     }
     100% { 
         opacity: 1;
+        display: block;
         transform: none;
     }
 }
 
 @-ms-keyframes changeLogos2 {
     0% { 
+        display: block;
         opacity: 0;
         transform: translateY(-2rem);
     }
     100% { 
         opacity: 1;
+        display: block;
         transform: none;
     }
 }
 
 @keyframes changeLogos2 {
     0% { 
+        display: block;
         opacity: 0;
         transform: translateY(-2rem);
     }
     100% { 
         opacity: 1;
+        display: block;
         transform: none;
     }
 }
