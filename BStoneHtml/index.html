@@ -17,14 +17,15 @@
     <meta name="rating" content="general">
     <meta name="distribution" content="global">
     <meta name="expires" content="never">
-    <meta name="Cache-Control" content="private">
-    <meta name="revisit-after" content="3 days">
+  
+    <meta http-equiv="Cache-control" content="public">
+    <meta name="revisit-after" content="5 days">
 
-    <title>B Stone - Bloco explore projetct innovation</title>
+    <title>B Stone - Bloco Explore Project Innovation</title>
     <meta name="title" content="B Stone" />
-    <meta name="keywords" content="Stone">
-    <meta name="description" content="Bloco explore projetct innovation" />
-    <meta name="keywords" content="favicon, check, checker, analyze, check favicon, favicon checker">
+    
+    <meta name="description" content="A Bloco B é uma empresa sempre presente, pronta para responder com seriedade e rigor a cada projecto que abraça, hoje e no futuro, garantindo qualidade e continuidade do produto.">
+    <meta name="keywords" content="Bloco B, Mármores, Inertes, Construção, Estremoz, Blocos, Chapas, Ladrilhos, Pedra">
 
     <meta property="og:site_name" content="B Stone" />
     <meta property="og:image" content="assets/Imagem_592x292.jpg" />
@@ -32,7 +33,7 @@
     <meta property="og:image:height" content="292" />
     <meta property="og:image:alt" content="Bloco Stone" />
     <meta property="og:title" content="B Stone" />
-    <meta property="og:description" content="Bloco explore projetct innovation" />
+    <meta property="og:description" content="B Stone - Bloco Explore Project Innovation" />
     <meta property="og:type" content="website" />
   
     <!-- favicons -->
@@ -558,8 +559,7 @@
 
       <!-- 3.1.1 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.0.0/rellax.min.js"></script>
-    <script src="fallback-ie.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.0.0/rellax.min.js"></script>
     
     <script> 
 
@@ -600,6 +600,38 @@
             let vh = window.innerHeight * 0.01;
             document.documentElement.style.setProperty('--vh', `${vh}px`);
           });
+
+
+
+          //detects if user is using Internet Explorer
+          //returns version of IE or false, if browser is not IE
+          //Function to detect IE or not
+          function IEdetection() {
+              var ua = window.navigator.userAgent;
+              var msie = ua.indexOf('MSIE ');
+              if (msie > 0) {
+                  // IE 10 or older, return version number
+                  return ('ie-fallback ie' + parseInt(ua.substring(
+                      msie + 5, ua.indexOf('.', msie)), 10));
+              }
+              var trident = ua.indexOf('Trident/');
+              if (trident > 0) {
+                  // IE 11, return version number
+                  var rv = ua.indexOf('rv:');
+                  return ('ie-fallback ie' + parseInt(ua.substring(
+                      rv + 3, ua.indexOf('.', rv)), 10));
+              }
+              var edge = ua.indexOf('Edge/');
+              if (edge > 0) {
+                  //Edge (IE 12+), return version number
+                  return ('ie-fallback ie' + parseInt(ua.substring(
+                      edge + 5, ua.indexOf('.', edge)), 10));
+              }
+              // User uses other browser
+              //return ('fine');
+          }
+          var result = IEdetection();
+          $('html').addClass(result);
 
     </script>
   </body>
