@@ -141,8 +141,14 @@ footer .scrollButton{
 				margin-top: 20px;
 				background-size: 30px!important;
 			}
-			.container.cofinancedby a{
+
+			
+	}
+
+	@media (max-width: 980px) { 
+		.container.cofinancedby a.cofinance1,
+			.container.cofinancedby a.cofinance2{
 				float: none;
-				margin: 0 auto;
+				margin: 15px auto 0;
 			}
 	}
