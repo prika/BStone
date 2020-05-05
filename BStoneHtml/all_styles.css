@@ -882,9 +882,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
 /* FOOTER */
 footer{
 	background: #2A2A2A;
-	padding-top: 40px;
-	padding-bottom: 40px;
-
+	padding-top: 30px;
+	padding-bottom: 10px;
 	position: relative;
 }
 
@@ -977,6 +976,35 @@ footer .scrollButton{
 		background-color: #fff;
 	}
 
+	
+    .container.cofinancedby{
+		border-top: 1px solid #555;
+		margin-top: 16px;
+		padding: 18px 0;
+	}
+	.container.cofinancedby .row{
+		max-width: 870px;
+		margin: 0 auto;
+	}
+
+    .container.cofinancedby a{
+        width: 355px;
+        height: 65px;
+        display: block;
+        text-decoration: none;
+		background: url(assets/cofinanced1.svg) no-repeat;
+		opacity: .7;
+    }
+    .container.cofinancedby a.cofinance2{
+		background: url(assets/cofinanced2.svg) no-repeat;
+		float: right;
+	}
+
+	.container.cofinancedby a:hover{
+		opacity: 1;
+	}
+
+
 
 	@media (max-width: 767px) { 
 		
@@ -995,8 +1023,13 @@ footer .scrollButton{
 				margin-top: 20px;
 				background-size: 30px!important;
 			}
-    }
-    
+			.container.cofinancedby a{
+				float: none;
+				margin: 0 auto;
+			}
+	}
+
+
     .js-loading *,
     .js-loading *:before,
     .js-loading *:after { animation-play-state: paused !important; }
