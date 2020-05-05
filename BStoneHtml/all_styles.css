@@ -712,10 +712,11 @@ and (-webkit-min-device-pixel-ratio: 2) {
                 margin-left:0;
             }
 
-        .product:nth-of-type(2n){
-            /* margin-top: 40px; */
-            transform: translate3d(0,0,0) !important;
-        }
+            .product:nth-of-type(2n),
+            .product.fixingLast{
+                /* margin-top: 40px; */
+                transform: translate3d(0,0,0) !important;
+            }
 }
 
 /* CONTACTS */
