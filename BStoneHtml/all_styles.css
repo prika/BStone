@@ -726,7 +726,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	background-image: url(assets/B_Simbolo_estatico_Contactos.svg);
 	background-repeat: no-repeat;
     background-attachment: fixed;
-	background-position: 220px 185%;
+	background-position: 220px 130%;
 	
 	-webkit-background-size: 450px;
 	-moz-background-size: 450px;
